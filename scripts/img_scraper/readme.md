@@ -1,3 +1,5 @@
+Scrapes images out of HTML loaded from a provided URL.
+
 Use the script by following these steps:
 
 1. Open a text editor such as Notepad or Sublime Text.
