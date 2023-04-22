@@ -1,0 +1,90 @@
+[
+    {
+      "name": "ExampleClass",
+      "imports": [
+        "java.util.ArrayList",
+        "java.util.List",
+        "com.example.OtherClass"
+      ],
+      "extends": "com.example.BaseClass",
+      "implements": [
+        "com.example.Interface1",
+        "com.example.Interface2"
+      ],
+      "constants": [
+        {
+          "name": "MY_CONSTANT",
+          "type": "int",
+          "value": 42
+        },
+        {
+          "name": "OTHER_CONSTANT",
+          "type": "String",
+          "value": "\"Hello, world!\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "exampleMethod",
+          "returnType": "void",
+          "parameters": [
+            {
+              "name": "param1",
+              "type": "String"
+            },
+            {
+              "name": "param2",
+              "type": "int"
+            }
+          ],
+          "body": [
+            "System.out.println(param1);",
+            "System.out.println(param2);"
+          ]
+        },
+        {
+          "name": "anotherMethod",
+          "returnType": "List<String>",
+          "parameters": [],
+          "body": [
+            "List<String> list = new ArrayList<>();",
+            "list.add(\"Hello\");",
+            "list.add(\"world\");",
+            "return list;"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AnotherClass",
+      "imports": [
+        "com.example.ExampleClass"
+      ],
+      "implements": [
+        "com.example.Interface3"
+      ],
+      "constants": [
+        {
+          "name": "ANOTHER_CONSTANT",
+          "type": "String",
+          "value": "\"Hello from AnotherClass!\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "anotherMethod",
+          "returnType": "void",
+          "parameters": [
+            {
+              "name": "param1",
+              "type": "int"
+            }
+          ],
+          "body": [
+            "System.out.println(param1);"
+          ]
+        }
+      ]
+    }
+  ]
+  
