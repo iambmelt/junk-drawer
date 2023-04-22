@@ -1,5 +1,5 @@
 # junk-drawer
-my public collection of junk drawer scripts and utilities.
+small-batch artisanal software, every line of code a unique masterpiece designed to elevate your computering experience
 
 ---
 DISCLAIMER: _All materials in this repository are provided as-is, with no warranties of any kind. The author accepts no responsibility for any harm or damage caused by the use or misuse of these scripts. Use them at your own risk._
