@@ -5,3 +5,9 @@ The program then sets the version and variant fields of the GUID by manipulating
 Note that the `generate_guid` function returns a `std::string` rather than a `char*` to avoid memory management issues. The program also includes a main function that calls `generate_guid` and prints the resulting GUID to the console.
 
 This implementation isn't good enough for security purposes.
+
+Compile it
+
+```sh
+user@machine.local % g++ -o out guid_gen.cpp
+```
