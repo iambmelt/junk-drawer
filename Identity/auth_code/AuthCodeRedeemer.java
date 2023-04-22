@@ -1,3 +1,4 @@
+package auth_code;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -99,6 +100,6 @@ public class AuthCodeRedeemer {
      * Prints the usage instructions for the program.
      */
     private static void printUsage() {
-        System.out.println("Usage: java AzureAuthCodeRedeemer --client-id <client-id> --redirect-uri <redirect-uri> --scope <scope> --auth-code <auth-code>");
+        System.out.println("Usage: java AuthCodeRedeemer --client-id <client-id> --redirect-uri <redirect-uri> --scope <scope> --auth-code <auth-code>");
     }
 }
