@@ -1,0 +1,1 @@
+This directory contains a collection of utilities that can be used for image manipulation tasks. These utilities are designed to simplify common image processing tasks.

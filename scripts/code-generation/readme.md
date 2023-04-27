@@ -1,0 +1,1 @@
+This directory contains a collection of utilities that can be used for code generation tasks. These utilities are designed to simplify common code generation tasks, such as generating boilerplate code, scaffolding new projects, and automating repetitive tasks.
