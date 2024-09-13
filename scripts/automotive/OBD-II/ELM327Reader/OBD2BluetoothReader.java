@@ -18,8 +18,10 @@ public class OBD2BluetoothReader {
     // Establish Bluetooth connection to the OBD-II adapter using Bluetooth address
     public OBD2BluetoothReader(final String btAddress) throws IOException {
         // Open a Bluetooth connection using BlueCove's Connector
-        final String url = "btspp://" + btAddress 
-                           + ":1;authenticate=false;encrypt=false;master=false";
+        final String url = "btspp://" 
+            + btAddress 
+            + ":1;authenticate=false;encrypt=false;master=false";
+
         streamConnection = (StreamConnection) Connector.open(url);
         
         // Set up input/output streams with a defined buffer size
