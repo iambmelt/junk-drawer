@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 public class OBD2BluetoothReader {
 
-    // Define a constant for buffer size
+    // Buffer size = 8KB
     private static final int BUFFER_SIZE = 8192;
 
     private final StreamConnection streamConnection;
@@ -23,10 +23,18 @@ public class OBD2BluetoothReader {
         streamConnection = (StreamConnection) Connector.open(url);
         
         // Set up input/output streams with a defined buffer size
-        writer = new BufferedWriter(new OutputStreamWriter(
-                                    streamConnection.openOutputStream()), BUFFER_SIZE);
-        reader = new BufferedReader(new InputStreamReader(
-                                    streamConnection.openInputStream()), BUFFER_SIZE);
+        writer = new BufferedWriter(
+            new OutputStreamWriter(
+                streamConnection.openOutputStream()
+            ), BUFFER_SIZE
+        );
+        
+        reader = new BufferedReader(
+            new InputStreamReader(
+                streamConnection.openInputStream()
+            ), 
+            BUFFER_SIZE
+        );
         
         initializeELM327();
     }
