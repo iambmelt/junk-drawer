@@ -27,7 +27,7 @@ It will:
 - Bash
 - Docker
 - `docker-compose` (hyphenated legacy version)
-- A `docker-compose.yml` file defining **exactly one** service in the same directory
+- A `docker-compose.yml` file defining **exactly one** service in the same (or provided) directory
 
 ---
 
