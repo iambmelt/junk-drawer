@@ -39,6 +39,12 @@ It will:
 ./update-container.sh
 ```
 
+or
+
+```bash
+./update-container.sh [directory]
+```
+
 ### Verbose mode
 
 ```bash
