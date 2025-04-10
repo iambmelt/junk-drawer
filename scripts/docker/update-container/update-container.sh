@@ -1,4 +1,25 @@
 #!/bin/bash
+if [[ "$1" == "--help" ]]; then
+    echo "Usage: $0 [directory]"
+    echo
+    echo "Description:"
+    echo "  This script updates a Docker container defined in a docker-compose.yml file. It performs the"
+    echo "  following steps:"
+    echo "    1. Checks if the specified directory (or the current directory by default) contains a"
+    echo "       docker-compose.yml file."
+    echo "    2. Extracts the container name and the image name from the docker-compose file."
+    echo "    3. Verifies that the container is currently running."
+    echo "    4. Pulls the latest version of the image."
+    echo "    5. Stops and removes the running container."
+    echo "    6. Recreates the container using docker-compose."
+    echo "    7. Cleans up unused Docker images."
+    echo
+    echo "Options:"
+    echo "  [directory]  Directory containing a docker-compose.yml file (defaults to current directory)."
+    echo "  --help       Display this help message."
+    exit 0
+fi
+
 # update-container.sh - Update a Docker container defined in a docker-compose.yml file
 
 # Usage: ./update-container.sh [directory]
